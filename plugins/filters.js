@@ -63,7 +63,7 @@ await message.client.sendMessage(message.jid, fs.readFileSync('./Nandhuttynew/up
 await message.client.sendMessage(message.jid, fs.readFileSync('./Nandhuttynew/uploads/mention.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, quoted : message.data, ptt: true})
         }
         
-const array = ['Adwaith','Good morning','dance]
+const array = ['Adwaith','Good morning','dance']
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){
